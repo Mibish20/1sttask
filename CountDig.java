@@ -12,7 +12,8 @@ public class CountDig {
         } else {
             while (num != 0) {
                 num /= 10;  
-                count++;    
+                count++;  
+                System.out.println(num);
             }
         } 
         System.out.println("Number of digits: " + count);   
