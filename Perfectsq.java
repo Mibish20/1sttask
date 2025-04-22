@@ -4,14 +4,20 @@ public class Perfectsq {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = sc.nextInt();
-        double sqrtNum = Math.sqrt(number);
+        boolean PS = false;
         sc.close();
-        if (sqrtNum * sqrtNum == number) {
-            System.out.println(number + " is a perfect square.");
-            
+        for (int i=1;i*i<=number;i++){
+            if (i * i == number) {
+                PS = true;
+                
+            } 
+        } 
+        if (PS) {
+            System.out.println("It is a perfect square.");
         }else{
-            System.out.println(number + " is not a perfect square.");
+            System.out.println("It is not a perfect square.");
         }
+        
     }
     
 }
